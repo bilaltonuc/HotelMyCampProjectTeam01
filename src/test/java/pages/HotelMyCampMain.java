@@ -4,7 +4,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import utilities.ConfigReader;
 import utilities.Driver;
+
+import java.time.Duration;
 
 public class HotelMyCampMain {
 
@@ -88,6 +91,17 @@ public class HotelMyCampMain {
 
 
 
+
+public void loginOl(){
+
+    Driver.getDriver().get(ConfigReader.getProperty("HMCUrl"));
+    anasayfaLogin.click();
+    usernameBox.sendKeys(ConfigReader.getProperty("ValidUserName"));
+    passwordBox.sendKeys(ConfigReader.getProperty("ValidPassword"));
+    loginButtonElementi.click();
+
+
+}
 
 
 
