@@ -67,24 +67,58 @@ public class HotelMyCampMain {
     @FindBy(xpath = "//span[text()='Add Room Reservation ']")
     public WebElement addRoomReservationButtonElementi;
 
+
+    //Create User Register Form Web Element Locator *******************************************************
+
+    @FindBy(xpath = "//input[@id='UserName']")
+    public WebElement createUserRegisterFormUserNameBoxElementi;
+
+    @FindBy(xpath = "//input[@id='txtPassword']")
+    public WebElement createUserRegisterFormPasswordBoxElementi;
+
     @FindBy(xpath = "//input[@id='Email']")
-    public WebElement registerFormEmailBoxElementi;
+    public WebElement createUserRegisterFormEmailBoxElementi;
 
     @FindBy(xpath = "//input[@id='NameSurname']")
-    public WebElement registerFormNameBoxElementi;
+    public WebElement createUserRegisterFormNameBoxElementi;
 
     @FindBy(xpath = "//input[@id='PhoneNo']")
-    public WebElement registerFormTelNoElementi;
+    public WebElement createUserRegisterFormTelNoElementi;
 
     @FindBy(xpath = "//input[@id='SSN']")
-    public WebElement registerFormSocialSecurityBoxElementi;
+    public WebElement createUserRegisterFormSocialSecurityBoxElementi;
 
     @FindBy(xpath = "//input[@id='DrivingLicense']")
-    public WebElement registerFormDriverLicenseBoxElementi;
+    public WebElement createUserRegisterFormDriverLicenseBoxElementi;
 
     @FindBy(xpath = "//select[@id='IDCountry']")
-    public WebElement registerFormCountryDropDownElementi;
+    public WebElement createUserRegisterFormCountryDropDownElementi;
 
+    @FindBy(xpath = "//select[@id='IDState']")
+    public WebElement createUserRegisterFormStateDropDownElementi;
+
+    @FindBy(xpath = "//input[@id='Address']")
+    public WebElement createUserRegisterFormAddressBoxElementi;
+
+    @FindBy(xpath = "//input[@id='BirthDate']")
+    public WebElement createUserRegisterFormBirthDayBoxElementi;
+
+    @FindBy(xpath = "//input[@id='WorkingSector']")
+    public WebElement createUserRegisterFormWorkingSectorBoxElementi;
+
+    @FindBy(xpath = "//select[@id='IDRole']")
+    public WebElement createUserRegisterFormRoleDropDownElementi;
+
+    @FindBy(xpath = "(//div[@class='radio'])[1]")
+    public WebElement createUserRegisterFormApprovedRadioButtonYes;
+
+    @FindBy(xpath = "(//div[@class='radio'])[2]")
+    public WebElement createUserRegisterFormApprovedRadioButtonNo;
+
+    @FindBy(xpath = "//button[@id='btnSubmit']")
+    public WebElement createUserRegisterFormSaveButtonElementi;
+
+//********************************************************************************************************//
 
 
 
@@ -103,6 +137,13 @@ public void loginOl(){
 
 }
 
+    public void bekle(int saniye){
+        try {
+            Thread.sleep(saniye*1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 
 
 

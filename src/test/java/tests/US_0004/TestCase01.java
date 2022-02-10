@@ -1,7 +1,11 @@
 package tests.US_0004;
 
+import com.github.javafaker.Faker;
 import org.testng.annotations.Test;
 import pages.HotelMyCampMain;
+import utilities.ReusableMethods;
+
+import java.io.IOException;
 
 public class TestCase01 {
 
@@ -13,6 +17,11 @@ public class TestCase01 {
     public void test01() {
         HotelMyCampMain hotelMyCamp = new HotelMyCampMain();
         hotelMyCamp.loginOl();
+        hotelMyCamp.hotelManagementButtonElementi.click();
+        hotelMyCamp.hotelListButtonElementi.click();
+        hotelMyCamp.addHotelButtonElementi.click();
+        Faker faker = new Faker();
+
 
 
 
