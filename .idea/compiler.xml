@@ -6,8 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="com.HotelMyCamp" />
         <module name="HotelMyCampProjectTeam01" />
+        <module name="com.HotelMyCamp" />
       </profile>
     </annotationProcessing>
   </component>
