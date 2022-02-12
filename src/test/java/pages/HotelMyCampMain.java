@@ -149,6 +149,63 @@ public void loginOl(){
 
 
 
+    // Hotel List WebElement Locator********************************************************************
+
+
+
+
+    @FindBy(xpath = "/html/body/div[3]/div[1]/div/ul/li[3]/ul/li[2]/ul/li[1]")
+    public WebElement hotelListYaziWebElementi;
+
+    @FindBy(xpath = "//span[text()='List Of Hotels']")
+    public WebElement hotelListYazisi;
+
+    @FindBy(xpath = "(//a[@class='btn btn-xs default'])[1]")
+    public WebElement detailsButonu;
+
+    @FindBy(xpath = "(//a[@class='btn btn-xs default'])[2]")
+    public WebElement detailsHotelListButonu;
+
+    @FindBy(xpath = "(//div[@class='caption'])[1]")
+    public WebElement editHotelYazisi;
+
+    @FindBy(xpath = "//div[@class='portlet-title'][1]")
+    public WebElement hotelDataWebElementi;
+
+    @FindBy(xpath = "//input[@id='Code']")
+    public WebElement codeKutusuWebElementi;
+
+    @FindBy(id = "Name")
+    public WebElement nameKutusuWebElementi;
+
+
+    @FindBy(id = "Address")
+    public WebElement addressKutusuWebElementi;
+
+    @FindBy(id = "Phone")
+    public WebElement phoneKutusuWebElementi;
+
+    @FindBy(id = "Email")
+    public WebElement emailKutusuWebElementi;
+
+
+    @FindBy(id = "Email")
+    public WebElement emailHotelListKutusuWebElementi;
+
+
+    @FindBy(id = "IDGroup")
+    public WebElement idGroupKutusuWebElementi;
+
+    @FindBy(xpath = "(//button[@class='btn green'])[1]")
+    public WebElement saveButonuWebElementi;
+
+    @FindBy(id = "btnDelete")
+    public WebElement deleteButonuWebElementi;
+
+    @FindBy(xpath = "//button[text()='Cancel']")
+    public WebElement alertCancelButonuWebElementi;
+
+
 
 
 
