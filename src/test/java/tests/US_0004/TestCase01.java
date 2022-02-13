@@ -20,8 +20,6 @@ public class TestCase01 {
         hotelMyCamp.hotelManagementButtonElementi.click();
         hotelMyCamp.hotelListButtonElementi.click();
         hotelMyCamp.addHotelButtonElementi.click();
-        Faker faker = new Faker();
-        //
 
 
 
@@ -29,7 +27,6 @@ public class TestCase01 {
 
     }
 
-// merhaba
 
 
 }

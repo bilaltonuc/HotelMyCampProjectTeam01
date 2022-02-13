@@ -13,8 +13,10 @@ public class HotelMyCampHotelList {
     }
 
 
+
     //              USER STORY 4 VE 5         //
     //              HOTEL LIST               //
+
 
 
     @FindBy(xpath = "(//a[@href='/admin/HotelAdmin'])[1]")
@@ -61,16 +63,12 @@ public class HotelMyCampHotelList {
     public WebElement addHotelAlertOkButtonElementi;
 
 
-
-
     @FindBy(xpath = "//button[text()='Search']")
     public WebElement addHotelSearchButtonElementi;
 
 
-
     @FindBy(xpath = "//input[@name='Code']")
     public WebElement addHotelCodeSearchBoxElementi;
-
 
 
     @FindBy(xpath = "//a[normalize-space()='Details']")

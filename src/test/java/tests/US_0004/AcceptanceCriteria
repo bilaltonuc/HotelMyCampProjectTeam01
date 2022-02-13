@@ -1,0 +1,12 @@
+1-) 'Hotel Management' altinda, 'Hotel List' gorunuyor ve tiklandiginda "https://www.hotelmycamp.com/admin/HotelAdmin/"
+adresine yonlendiriyor olmali.
+
+2-) 'https://www.hotelmycamp.com/admin/HotelAdmin' sayfasinda 'ADD HOTEL' butonu gorunuyor ve tiklanabiliyor olmali.
+
+3-) 'ADD HOTEL' butonuna tiklandiginda, 'https://www.hotelmycamp.com/admin/HotelAdmin/Create' sayfasina gidiyor olmali.
+
+4-) 'Code' 'Name' 'Address' 'Phone' ve 'Email' inbox'larina ulasilabiliyor ve veri girilebiliyor olmali, 'IDGroup' dropdown
+icinde 'Hotel Type1' ve 'Hotel Type2' gorunuyor ve secilebiliyor olmali ve girilen bilgiler 'SAVE' butonuna basildiginda alert
+olarak 'Hotel was inserted successfully' mesaji ekranda gorunmeli.
+
+5-) Bilgileri girilen Hotel 'https://www.hotelmycamp.com/admin/HotelAdmin' adresindeki WebTable icinde dogru sekilde gorunmeli.
