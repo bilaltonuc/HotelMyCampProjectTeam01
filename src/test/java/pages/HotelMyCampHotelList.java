@@ -74,6 +74,9 @@ public class HotelMyCampHotelList {
     @FindBy(xpath = "//a[text()='Details']")
     public WebElement addHotelIlkDetailsButtonElementi;
 
+    @FindBy(xpath = "//div[@class='caption']")
+    public WebElement addHotelCreateHotelYazisiElementi;
+
 
 
 

@@ -1,8 +1,12 @@
 package tests.US_0004;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.HotelMyCampHotelList;
 import pages.HotelMyCampMain;
+import utilities.ReusableMethods;
+
+import java.io.IOException;
 
 public class TestCase03 {
 
@@ -12,7 +16,7 @@ public class TestCase03 {
 
 
     @Test
-    public void test03() {
+    public void test03() throws IOException {
         HotelMyCampMain hotelMyCampMain = new HotelMyCampMain();
         HotelMyCampHotelList hotelList = new HotelMyCampHotelList();
         hotelMyCampMain.loginOl();
@@ -20,6 +24,12 @@ public class TestCase03 {
         hotelMyCampMain.hotelManagementButtonElementi.click();
         hotelMyCampMain.hotelListButtonElementi.click();
         hotelMyCampMain.addHotelButtonElementi.click();
+
+        ReusableMethods.getScreenshot("Create_Hotel");
+        String expectedResult = "Create Hotel";
+        String actualresult = hotelList.addHotelCreateHotelYazisiElementi.getText();
+
+        Assert.assertEquals(actualresult, expectedResult);
 
 
 
