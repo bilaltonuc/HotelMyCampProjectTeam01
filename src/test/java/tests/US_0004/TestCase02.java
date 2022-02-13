@@ -7,6 +7,8 @@ import utilities.Driver;
 
 public class TestCase02 {
 
+    //"https://www.hotelmycamp.com/admin/HotelAdmin/
+    //Adresindeki 'ADD HOTEL' butonu gorunuyor ve tiklanabiliyor olmali."
 
     @Test
     public void test02() {
