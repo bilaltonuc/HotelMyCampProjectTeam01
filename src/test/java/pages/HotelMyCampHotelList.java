@@ -85,6 +85,10 @@ public class HotelMyCampHotelList {
     public WebElement addHotelCreateHotelYazisiElementi;
 
 
+    @FindBy(xpath = "//select[@name='datatable_ajax_length']")
+    public WebElement addHotelkayitSayisiDropDownElementi;
+
+
 
 
 

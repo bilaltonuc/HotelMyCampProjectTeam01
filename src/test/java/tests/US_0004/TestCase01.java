@@ -41,8 +41,10 @@ public class TestCase01 {
         WebElement hotelListButtonElementi = hotelList.hotelListButtonElementi;
         Assert.assertTrue(hotelListButtonElementi.isDisplayed());
 
-
-        Driver.closeDriver();
+        WebElement kayitSayisiDropDownElementi = hotelList.addHotelkayitSayisiDropDownElementi;
+        Select select = new Select(kayitSayisiDropDownElementi);
+        select.selectByValue("-1");
+       // Driver.closeDriver();
 
     }
 
