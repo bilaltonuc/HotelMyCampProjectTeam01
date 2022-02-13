@@ -70,6 +70,13 @@ public class HotelMyCampHotelList {
     @FindBy(xpath = "//input[@name='Code']")
     public WebElement addHotelCodeSearchBoxElementi;
 
+    @FindBy(xpath = "//input[@name='Name']")
+    public WebElement addHotelNameSearchBoxElementi;
+
+    @FindBy(xpath = "//input[@name='Phone']")
+    public WebElement addHotelPhoneSearchBoxElementi;
+
+
 
     @FindBy(xpath = "//a[text()='Details']")
     public WebElement addHotelIlkDetailsButtonElementi;
