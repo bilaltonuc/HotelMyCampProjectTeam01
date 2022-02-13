@@ -28,6 +28,19 @@ public class TestCase04 {
         hotelMyCamp.hotelListButtonElementi.click();
         hotelMyCamp.addHotelButtonElementi.click();
 
+
+
+/*
+        "Code: 13579
+        Name: Deneme Hotel
+        Address: 9 E. Loockerman street, suite 311 Dover, DE 19901
+        Phone: 302 718 2180
+        Email: info@hotelmycamp.com
+        Yukaridaki bilgilerle yeni hotel olusturulacak.
+*/
+
+
+
         String code ="13579";
         hotelList.addHotelCodeBoxElementi.sendKeys(code);
 

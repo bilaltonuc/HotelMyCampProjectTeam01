@@ -4,6 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.HotelMyCampHotelList;
 import pages.HotelMyCampMain;
+import utilities.Driver;
 import utilities.ReusableMethods;
 
 import java.io.IOException;
@@ -32,7 +33,7 @@ public class TestCase03 {
         Assert.assertEquals(actualresult, expectedResult);
 
 
-
+        Driver.closeDriver();
 
 
 

@@ -39,6 +39,7 @@ public class TestCase02 {
         Assert.assertEquals(actualUrl, expectedUrl);
 
 
+        Driver.closeDriver();
 
 
 
