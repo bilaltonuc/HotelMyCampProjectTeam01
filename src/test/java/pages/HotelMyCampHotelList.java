@@ -36,7 +36,7 @@ public class HotelMyCampHotelList {
 
 
     @FindBy(xpath = "//input[@id='Address']")
-    public WebElement addHotelAdsressBoxElementi;
+    public WebElement addHotelAddressBoxElementi;
 
 
     @FindBy(xpath = "//input[@id='Phone']")
@@ -55,7 +55,7 @@ public class HotelMyCampHotelList {
     public WebElement addHotelSaveButtonElementi;
 
 
-    @FindBy(xpath = "//div[@class='bootbox-body']")
+    @FindBy(xpath = "//div[@class='bootbox modal fade bootbox-alert in']//div[@class='modal-body']")
     public WebElement addHotelAlertMesajiElementi;
 
 
