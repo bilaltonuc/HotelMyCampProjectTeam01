@@ -1,13 +1,11 @@
 package pages;
 
-import org.openqa.selenium.By;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.ConfigReader;
 import utilities.Driver;
-
-
 
 public class HotelMyCampMain {
 
@@ -118,40 +116,8 @@ public class HotelMyCampMain {
     @FindBy(xpath = "//button[@id='btnSubmit']")
     public WebElement createUserRegisterFormSaveButtonElementi;
 
-//********************************************************************************************************//
-
-
-
-
-
-
-
-public void loginOl(){
-
-    Driver.getDriver().get(ConfigReader.getProperty("HMCUrl"));
-    anasayfaLogin.click();
-    usernameBox.sendKeys(ConfigReader.getProperty("ValidUserName"));
-    passwordBox.sendKeys(ConfigReader.getProperty("ValidPassword"));
-    loginButtonElementi.click();
-
-
-}
-
-    public void bekle(int saniye){
-        try {
-            Thread.sleep(saniye*1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-    }
-
-
-
-
 
     // Hotel List WebElement Locator********************************************************************
-
-
 
 
     @FindBy(xpath = "/html/body/div[3]/div[1]/div/ul/li[3]/ul/li[2]/ul/li[1]")
@@ -160,10 +126,10 @@ public void loginOl(){
     @FindBy(xpath = "//span[text()='List Of Hotels']")
     public WebElement hotelListYazisi;
 
-    @FindBy(xpath = "(//a[@class='btn btn-xs default'])[1]")
+    @FindBy(xpath = "(//tr[@class='odd'])[1]")
     public WebElement detailsButonu;
 
-    @FindBy(xpath = "(//a[@class='btn btn-xs default'])[2]")
+    @FindBy(xpath = "(//a[@class='btn btn-xs default'])[1]")
     public WebElement detailsHotelListButonu;
 
     @FindBy(xpath = "(//div[@class='caption'])[1]")
@@ -172,7 +138,7 @@ public void loginOl(){
     @FindBy(xpath = "//div[@class='portlet-title'][1]")
     public WebElement hotelDataWebElementi;
 
-    @FindBy(xpath = "//input[@id='Code']")
+    @FindBy(id= "Code")
     public WebElement codeKutusuWebElementi;
 
     @FindBy(id = "Name")
@@ -199,11 +165,46 @@ public void loginOl(){
     @FindBy(xpath = "(//button[@class='btn green'])[1]")
     public WebElement saveButonuWebElementi;
 
+    @FindBy(xpath = "//button[text()='OK']")
+    public WebElement alertOkayButonu;
+
     @FindBy(id = "btnDelete")
     public WebElement deleteButonuWebElementi;
 
     @FindBy(xpath = "//button[text()='Cancel']")
     public WebElement alertCancelButonuWebElementi;
+
+
+
+
+    public void tearDown(){
+
+        Driver.closeDriver();
+    }
+
+
+public void loginOl(){
+
+    Driver.getDriver().get(ConfigReader.getProperty("HMCUrl"));
+    anasayfaLogin.click();
+    usernameBox.sendKeys(ConfigReader.getProperty("ValidUserName"));
+    passwordBox.sendKeys(ConfigReader.getProperty("ValidPassword"));
+    loginButtonElementi.click();
+
+
+}
+
+    public void bekle(int saniye){
+        try {
+            Thread.sleep(saniye*1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+
+
+
 
 
 
