@@ -8,7 +8,6 @@
         <outputRelativeToContentRoot value="true" />
         <module name="HotelMyCampProjectTeam01" />
         <module name="com.HotelMyCamp" />
-        <module name="untitled" />
       </profile>
     </annotationProcessing>
   </component>
