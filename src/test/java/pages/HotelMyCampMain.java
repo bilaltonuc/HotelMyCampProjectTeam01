@@ -142,23 +142,44 @@ public void loginOl(){
         }
     }
 
+//******************USER STORY 2 icin LINKLER*************************************
 
 
 
+/*
+//a[text()='Log in']   Log in button
+//h1[text()='Log in'] Log in yazisi
+//span[.='ListOfUsers'] LISTOFUSERS yazisi
+(//label[@class='error'])[1] username (this field is required.)
+(//label[@class='error'])[2] password (this field is required.)
 
+(//label[.='This field is required.'])[1]  (//label[@class='error'])[1]
+(//label[.='This field is required.'])[2]  (//label[@class='error'])[2]
 
+//span[text()='Try again please'] error message
+//li[text()='Username or password is incorrect, please correct them and try again'] error message
+ */
 
+    @FindBy(xpath = "//a[text()='Log in']")
+    public WebElement logInButon;
 
+    @FindBy(xpath = "//h1[text()='Log in']")
+    public WebElement logInYazisi;
 
+    @FindBy(xpath = "//span[.='ListOfUsers']")
+    public WebElement listOfUsersYazisi;
 
+    @FindBy(xpath = "(//label[@class='error'])[1]")
+    public WebElement userNameUyariMesaj;
 
+    @FindBy(xpath = "(//label[@class='error'])[2]")
+    public WebElement passWordUyariMesaj;
 
+    @FindBy(xpath = "//span[text()='Try again please']")
+    public WebElement errorMesaj1;
 
-
-
-
-
-
+    @FindBy(xpath = "//li[text()='Username or password is incorrect, please correct them and try again']")
+    public WebElement errorMesaj2;
 
 
 

@@ -49,7 +49,8 @@ public class Driver {
         }
 
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15)); //dynamic wait
+        //genelde findElement/s methodunda kullanilir
         return driver;
     }
 
