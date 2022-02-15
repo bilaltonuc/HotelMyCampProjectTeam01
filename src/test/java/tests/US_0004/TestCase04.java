@@ -71,7 +71,6 @@ public class TestCase04 {
 
         WebElement alertOkButtonElementi = hotelList.addHotelAlertOkButtonElementi;
         alertOkButtonElementi.click();
-
         Driver.closeDriver();
 
 
