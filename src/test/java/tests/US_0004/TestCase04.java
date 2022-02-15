@@ -1,12 +1,15 @@
 package tests.US_0004;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.HotelMyCampHotelList;
 import pages.HotelMyCampMain;
 import utilities.Driver;
+import utilities.JSUtils;
 import utilities.ReusableMethods;
 
 import java.io.IOException;
@@ -60,11 +63,12 @@ public class TestCase04 {
         WebElement dropDownElementi = hotelList.addHotelIDGroupDropDownElementi;
         Select select = new Select(dropDownElementi);
         select.selectByIndex(1);
+        Actions actions = new Actions(Driver.getDriver());
+        actions.sendKeys(Keys.END).perform();
         hotelList.addHotelSaveButtonElementi.click();
 
         hotelMyCamp.bekle(1);
         ReusableMethods.getScreenshot("Hotel_Save");
-
         String expectedResultText = "Hotel was inserted successfully";
         String actualResultText = hotelList.addHotelAlertMesajiElementi.getText();
         Assert.assertTrue(actualResultText.contains(expectedResultText));
