@@ -64,21 +64,19 @@
         </dependency>
 
 
-    </dependencies>
 
-
-        <dependency>
-            <groupId>com.aventstack</groupId>
-            <artifactId>extentreports</artifactId>
-            <version>4.0.9</version>
-        </dependency>
-
-
-
-
-    </dependencies>
+    <dependency>
+        <groupId>com.aventstack</groupId>
+        <artifactId>extentreports</artifactId>
+        <version>4.0.9</version>
+    </dependency>
 
 
 
 
-</project>
+</dependencies>
+
+
+
+
+        </project>
