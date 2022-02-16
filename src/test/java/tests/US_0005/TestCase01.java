@@ -24,17 +24,16 @@ public class TestCase01 {
          hmclist = new HotelMyCampHotelList();
          hmclist.loginOl();
 
-       hmclist.hotelManagementButtonElementi.click();
+        hmclist.hotelManagementButtonElementi.click();
         hmclist.hotelListButtonElementi.click();
 
-        hmclist.detailsButonu.click();
-        hmclist.detailsHotelListButonu.click();
 
-        WebElement hotelYaziElementi=hmclist.hotelListYaziWebElementi;
+        WebElement hotelYaziElementi= hmclist.listofHotelsYazisi;
         Assert.assertTrue(hotelYaziElementi.isDisplayed());
 
-    }
 
+    }
 }
+
 
 

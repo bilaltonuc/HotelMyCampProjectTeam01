@@ -14,17 +14,16 @@ public class TestCase04 {
     HotelMyCampHotelList hmclist;
     JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
 
-    @Test
+    @Test()
     public void test04(){
        hmclist=new HotelMyCampHotelList();
-        hmclist = new HotelMyCampHotelList();
-        hmclist.loginOl();
+
 
         ReusableMethods.waitFor(3);
         js.executeScript("arguments[0].scrollIntoView()",hmclist.alertOkayButonu);
 
         js.executeScript("arguments[0].click()",hmclist.alertOkayButonu);
-        ReusableMethods.waitFor(3);
+        ReusableMethods.waitForVisibility(hmclist.alertTexti,10);
 
        Assert.assertTrue(hmclist.alertTexti.isDisplayed());
 

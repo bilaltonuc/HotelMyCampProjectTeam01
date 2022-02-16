@@ -1,29 +1,33 @@
 package tests.US_0005;
 
+
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.HotelMyCampHotelList;
-import pages.HotelMyCampMain;
 import utilities.Driver;
+import utilities.ReusableMethods;
 
 public class TestCase05 {
     HotelMyCampHotelList hmclist;
     JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
-    @Test
+
+    @Test()
     public void test05(){
 
-   hmclist=new HotelMyCampHotelList();
+        hmclist=new HotelMyCampHotelList();
 
-        hmclist.loginOl();
 
-        hmclist.deleteButonuWebElementi.click();
         js.executeScript("arguments[0].scrollIntoView()",hmclist.deleteButonuWebElementi);
-        js.executeScript("arguments[0].click()",hmclist.alertOkayButonu);
-
+        js.executeScript("arguments[0].click()",hmclist.deleteButonuWebElementi);
+        ReusableMethods.waitForVisibility(hmclist.deleteAlertYazisi,10);
         Assert.assertTrue(hmclist.deleteAlertYazisi.isDisplayed());
-       hmclist.tearDown();
+
+        String expectedDeleteAlertYazisi="Would you like to continue?";
+        System.out.println(expectedDeleteAlertYazisi);
+
+
+        hmclist.tearDown();
 
 
     }
